@@ -1,0 +1,193 @@
+/*Шрифты*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/*Обнуление стилей
+============================================*/
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	padding: 0;
+	border: 0;
+	border-width: 0;
+}
+/*Header
+============================================*/
+body {
+	background-color: #202245;
+}
+
+.header {
+	margin: 50px 165px 0 303px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.list {
+	
+}
+
+.list ul {
+	display: flex;
+	align-items: center;
+}
+
+.list ul li:not(:last-child) {
+	margin-right: 71px;
+}
+
+.list ul li a {
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+
+	transition: 0.3s;
+}
+
+.list a:hover {
+	color: rgba(255, 255, 255, 0.42);
+	transition: 0.3s;
+}
+
+.logs {
+	display: flex;
+	align-items: center;
+
+	transition: 0.3s;
+}
+
+.logs a:hover {
+	color: rgba(255, 255, 255, 0.42);
+	transition: 0.3s;
+}
+
+.log-in a, .reg a {
+	display: flex;
+	align-items: center;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+}
+
+.log-in img, .reg img {
+	margin-right: 15px;
+}
+
+.log-in {
+	margin-right: 34px;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+	width: 28px;
+	height: 24px;
+}
+
+.burger_line {
+	width: 28px;
+	height: 2px;
+	margin-top: 6px;
+	background-color: #fff;
+}
+
+
+.intro {
+	position: relative;
+	margin-top: 65px;
+	margin-left: 303px;
+}
+
+.r_img {
+	position: absolute;
+	right: 68px;
+	top: 0;
+	z-index: -1;
+}
+
+.text_intro h1 {
+	margin-bottom: 23px;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 52px;
+	line-height: 65px;
+	text-transform: capitalize;
+}
+
+.red_word {
+	color: #FF2E63;
+}
+
+.subtitle_intro {
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 35px;
+	color: #FFFFFF;
+}
+
+.btn {
+	margin-top: 49px;
+
+	padding: 21px 33px;
+	border: none;
+	background: linear-gradient(180deg, #FF2E63 0%, rgba(247, 33, 87, 0.96875) 46.88%, rgba(255, 46, 99, 0) 100%);
+	box-shadow: 0px -1px 34px 5px rgba(255, 46, 99, 0.27);
+	border-radius: 5px;
+	background-color: #C1274F;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 27px;
+	color: #fff;
+}
+
+
+
+.for_whom {
+	margin: 341px 235px 197px 230px;
+	text-align: center;
+}
+
+.t_for_whom {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	color: #fff;
+}
