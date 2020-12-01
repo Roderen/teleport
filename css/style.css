@@ -1,6 +1,7 @@
 /*Шрифты*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 /*Обнуление стилей
 ============================================*/
@@ -35,6 +36,7 @@ input {
 ============================================*/
 body {
 	background-color: #202245;
+
 }
 
 .container {
@@ -110,7 +112,7 @@ body {
 .log-in {
 	margin-right: 34px;
 }
-
+/*Header > Burger menu*/
 .burger {
 	display: none;
 	cursor: pointer;
@@ -124,18 +126,18 @@ body {
 	margin-top: 6px;
 	background-color: #fff;
 }
-
-
+/*Intro
+============================================*/
 .intro {
 	position: relative;
-	margin-top: 65px;
+	margin-top: 123px;
 	margin-left: 303px;
 }
 
 .r_img {
 	position: absolute;
-	right: 68px;
-	top: 0;
+	right: 65px;
+    top: -60px;
 	z-index: -1;
 }
 
@@ -144,13 +146,20 @@ body {
 
 	font-family: Nunito;
 	font-style: normal;
+	font-weight: 700;
+	font-size: 52px;
+	line-height: 65px;
+	letter-spacing: -0.3px;
+	color: #fff;
+}
+
+.red_word {
+	font-family: Nunito;
+	font-style: normal;
 	font-weight: 800;
 	font-size: 52px;
 	line-height: 65px;
 	text-transform: capitalize;
-}
-
-.red_word {
 	color: #FF2E63;
 }
 
@@ -165,6 +174,7 @@ body {
 
 .btn {
 	margin-top: 49px;
+	cursor: pointer;
 
 	padding: 21px 33px;
 	border: none;
@@ -180,19 +190,107 @@ body {
 	line-height: 27px;
 	color: #fff;
 }
-
-
-
+/*For whom
+============================================*/
 .for_whom {
-	margin: 341px 235px 197px 230px;
+	margin: 341px 40px 197px 40px;
 	text-align: center;
 }
 
 .t_for_whom {
+	max-width: 1318px;
+	margin: 0 auto;
+
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 36px;
 	color: #fff;
+}
+/*For whom > Cards*/
+.cards {
+	max-width: 1318px;
+	margin: 0 auto;
+	margin-top: 94px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 390px;
+	height: 349px;
+	padding: 35px 17px 213px 17px;
+
+
+	background-color: #3C4070;
+	box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.2);
+	border-radius: 7px;
+
+	position: relative;
+}
+
+.title_card {
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 33px;
+	text-align: center;
+	color: #fff;
+}
+
+.subtitle_card {
+	margin-top: 12px;
+
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	color: #D8D9E2FF;
+}
+
+.card_img_blogger {
+	position: absolute;
+    right: 75px;
+    top: 145px;
+}
+
+.card_img_school {
+	position: absolute;
+	left: -10px;
+    top: 141px;
+}
+
+.card_img_expert {
+	position: absolute;
+	top: 104px;
+	left: 0;
+}
+/*Overview
+============================================*/
+.t_overview {
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+}
+/*Overview > Video*/
+.video {
+	width: 1165px;
+	height: 719px;
+	margin: 0 auto;
+}
+
+.video img {
+	width: 100%;
+	height: 100%;
 }
