@@ -36,26 +36,25 @@ input {
 ============================================*/
 body {
 	background-color: rgb(32, 34, 69);
-	overflow-x: hidden;
-
 }
 
 .container {
 	max-width: 1920px;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 .header {
+	position: relative;
 	margin: 50px 165px 0 303px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	z-index: -2;
 }
 
 .logo {
-	z-index: -2;
+	z-index: -1;
 }
 
 .list ul {
@@ -84,9 +83,9 @@ body {
 }
 
 .logs {
+	z-index: -1;
 	display: flex;
 	align-items: center;
-	z-index: -2;
 
 	transition: 0.3s;
 }
@@ -116,50 +115,69 @@ body {
 	margin-right: 34px;
 }
 /*Header > Burger menu*/
-.burger_menu {
-	display: block;
-	cursor: pointer;
-	width: 28px;
-	height: 24px;
+.burger {
+	display: none;
 }
 
-.burger_line {
-	width: 28px;
+.burger_button {
+	cursor: pointer;
+	z-index: 1;
+}
+
+.burger_item {
+	width: 24px;
 	height: 2px;
-	margin-top: 6px;
 	background-color: #fff;
+	margin-bottom: 6px;
+}
+
+.burger_item:last-child {
+	margin-bottom: 0;
 }
 
 .burger_list {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -50px;
+    right: -30px;
 
-	padding: 100px 70px 100px 70px;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 1s;
+
+	padding: 100px 50px 80px 50px;
 	z-index: -1;
-	background-color: #FF2E63;
-
-	transform: translateX(400px);
-	transition: 0.7s ease-out;
+	background-color: #C1274F;
 }
 
-.burger_list ul {
-	display: flex;
-	flex-direction: column;
+.burger_list_toggle {
+	z-index: -1;
+	visibility: visible;
+    transform: translateX(0%);
+    transition: 1s;
 }
 
-.burger_list a {
+.logs_burger {
+	display: none;
+	line-height: 35px;
+	margin-top: 20px;
+}
+
+.burger_list ul li a {
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 50px;
+	line-height: 40px;
 	color: #fff;
 }
 
-.burger_list_toggle {
-	transform: translateX(0px);
-	transition: 0.7s ease-out;
+.logs_burger_log_in a, .logs_burger_reg a {
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
 }
 /*Intro
 ============================================*/
@@ -173,7 +191,6 @@ body {
 	position: absolute;
 	right: 65px;
     top: -60px;
-	z-index: -1;
 }
 
 .text_intro h1 {
@@ -192,8 +209,6 @@ body {
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 52px;
-	line-height: 65px;
 	text-transform: capitalize;
 	color: #FF2E63;
 }
@@ -310,7 +325,7 @@ body {
 /*What is
 ============================================*/
 .what_is {
-	width: 1238px;
+	max-width: 1238px;
 	margin: 0 auto;
 }
 
@@ -550,7 +565,7 @@ body {
 
 .tariffs_card_all {
 	position: relative;
-	width: 424px;
+	max-width: 424px;
 	height: 568px;
 	padding: 85px 67px 67px 67px;
 	text-align: center;

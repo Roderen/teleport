@@ -23,9 +23,9 @@ Array.prototype.forEach.call(items, item => {
   });
 });
 
-const burgerMenu = document.querySelector('.burger_menu');
+const burgerButton = document.querySelector('.burger_button');
 const burgerList = document.querySelector('.burger_list');
 
-burgerMenu.addEventListener('click', () => {
+burgerButton.addEventListener('click', () => {
     burgerList.classList.toggle('burger_list_toggle');
 })
