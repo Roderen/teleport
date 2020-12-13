@@ -1,4 +1,4 @@
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1682px) {
 	.header {
 		margin: 50px 100px 0 100px;
 	}
@@ -7,7 +7,7 @@
 	}
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1368px) {
 	.header {
 		margin: 50px 30px 0 70px;
 	}
@@ -32,7 +32,7 @@
 	}
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1282px) {
 	.intro {
 		margin: 100px 0 0 70px;
 	}
@@ -115,7 +115,7 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1026px) {
 	.logs {
 		display: none;
 	}
@@ -133,13 +133,13 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 802px) {
 	.tariffs_card_all:not(:first-child) {
 		margin-top: 150px;
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 	.r_img {
 		display: none;
 	}
@@ -192,7 +192,7 @@
 	}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 582px) {
 	.intro {
 		margin: 70px 30px 0 40px;
 	}
@@ -214,7 +214,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 402px) {
 	.for_whom img, .what_is img, .tariffs img {
 		display: none;
 	}
@@ -276,7 +276,7 @@
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 322px) {
 	.header {
 		margin: 20px 20px 0 20px;
 	}
