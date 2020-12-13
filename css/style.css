@@ -45,6 +45,7 @@ body {
 }
 
 .header {
+	z-index: 100;
 	position: relative;
 	margin: 50px 165px 0 303px;
 	display: flex;
@@ -184,7 +185,6 @@ body {
 .intro {
 	position: relative;
 	margin: 123px 0 0 303px;
-	z-index: -2;
 }
 
 .r_img {
